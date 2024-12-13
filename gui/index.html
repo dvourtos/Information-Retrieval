@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parliament Speeches Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Parliament Speech Search</h1>
+
+    <!-- Search Bar -->
+    <div class="search-section">
+      <label for="keyword">Keyword:</label>
+      <input type="text" id="keyword" placeholder="Enter keyword..." />
+    </div>
+
+    <!-- Parliamentary Period Dropdown -->
+    <div class="filter-section">
+      <label for="period">Parliamentary Period:</label>
+      <select id="period">
+        <option value="">-- Select a Period --</option>
+        <!-- Dynamic options will be added here -->
+      </select>
+    </div>
+
+    <!-- Date Range -->
+    <div class="filter-section">
+      <label for="start-date">From:</label>
+      <input type="date" id="start-date" />
+      <label for="end-date">To:</label>
+      <input type="date" id="end-date" />
+    </div>
+
+    <!-- Search Button -->
+    <button id="search-button">Search</button>
+
+    <!-- Results Section -->
+    <div class="results-section">
+      <h2>Results:</h2>
+      <table id="results-table">
+        <thead>
+          <tr>
+            <th>Member Name</th>
+            <th>Date</th>
+            <th>Parliamentary Period</th>
+            <th>Political Party</th>
+            <th>Speech</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Search results will populate here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
